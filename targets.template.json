@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "1",
+    "Arn": "<ECS_CLUSTER_ARN>",
+    "RoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/eventbridge-ecs-role",
+    "EcsParameters": {
+      "TaskDefinitionArn": "arn:aws:ecs:eu-central-1:<ACCOUNT_ID>:task-definition/pool-scraper-task:1",
+      "LaunchType": "FARGATE",
+      "NetworkConfiguration": {
+        "awsvpcConfiguration": {
+          "Subnets": ["<SUBNET_ID>"],
+          "AssignPublicIp": "ENABLED"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,4 @@
+task-def.json
+targets.json
+ecs-task-trust.json
+eventbridge-trust.json
